@@ -17,8 +17,13 @@ public class CountPrice {
             float discount = scanner.nextFloat();
             book = new Book(name, price, discount);
             float sell = price * discount;
-            System.out.println("书名：" + name + "出售价格:" + sell);
+            System.out.println("书名：" + book.getName() + "出售价格:" + sell);
 
         }
+    }
+    public static void countPrice(String name, float price, float discount){
+        Book book = new Book(name, price, discount);
+        float sell = price * discount;
+        System.out.println("书名：" + book.getName() + "出售价格:" + sell);
     }
 }
