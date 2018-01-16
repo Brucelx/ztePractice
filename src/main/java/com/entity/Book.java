@@ -6,13 +6,13 @@ package com.entity;
 public class Book {
     private String name;
     private float price;
-    private boolean isNew;
+    private float discount;
 
     public Book(){}
-    public Book(String name, float price, boolean isNew){
+    public Book(String name, float price, float discount){
         this.name = name;
         this.price = price;
-        this.isNew = isNew;
+        this.discount = discount;
     }
 
     public String getName() {
@@ -31,11 +31,11 @@ public class Book {
         this.price = price;
     }
 
-    public boolean isNew() {
-        return isNew;
+    public float getDiscount() {
+        return discount;
     }
 
-    public void setNew(boolean aNew) {
-        isNew = aNew;
+    public void setDiscount(float discount) {
+        this.discount = discount;
     }
 }
